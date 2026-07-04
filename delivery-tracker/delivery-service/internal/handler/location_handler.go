@@ -2,8 +2,8 @@ package handler
 
 import (
 	"net/http"
-	"tracking/internal/model"
-	"tracking/internal/service"
+	"delivery-service/internal/model"
+	"delivery-service/internal/service"
 
 	"github.com/gin-gonic/gin"
 )

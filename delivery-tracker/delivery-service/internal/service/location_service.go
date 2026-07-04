@@ -2,7 +2,7 @@ package service
 
 import (
 	"log"
-	"tracking/internal/model"
+	"delivery-service/internal/model"
 )
 
 type LocationService struct{}

@@ -2,8 +2,8 @@ package main
 import "github.com/gin-gonic/gin"
 
 import (
-	"tracking/internal/service"
-	"tracking/internal/handler"
+	"delivery-service/internal/service"
+	"delivery-service/internal/handler"
 )
 
 func main(){
