@@ -20,6 +20,7 @@ func NewLocationService(producer *kafka.Producer) *LocationService {
 func (s *LocationService) ProcessLocation(location model.LocationUpdate) error {
 	data, err := json.Marshal(location)
 	if(err != nil){
+		log.Printf("Kafka publish failed: %v", err)
 		return err
 	}
 	log.Printf("delivery_partner=%s lat=%f lon=%f",
@@ -27,6 +28,7 @@ func (s *LocationService) ProcessLocation(location model.LocationUpdate) error {
 		location.Latitude,
 		location.Longitude,
 	)
+	log.Println("Published successfully")
 	// return nil
 	return s.producer.Publish(data)
 }
