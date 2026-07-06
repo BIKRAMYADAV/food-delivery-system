@@ -1,4 +1,4 @@
-module github.com/bikramyadav/tracking-service
+module tracking-service
 
 go 1.25.0
 
